@@ -1,0 +1,207 @@
+/* CreateNote.css */
+.create-note {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .create-note h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .create-note form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .create-note label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .create-note input[type="text"],
+  .create-note input[type="date"],
+  .create-note textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+  
+  .create-note input[type="text"]:focus,
+  .create-note input[type="date"]:focus,
+  .create-note textarea:focus {
+    outline: none;
+    border-color: #2962ff;
+    box-shadow: 0 0 0 3px rgba(41, 98, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .create-note textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .create-note input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .create-note input[type="file"]:hover {
+    border-color: #2962ff;
+    background: rgba(41, 98, 255, 0.1);
+  }
+  
+  .create-note button[type="submit"] {
+    background: #2962ff;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .create-note button[type="submit"]:hover {
+    background: #1e4dff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .create-note button[type="submit"]:active {
+    transform: translateY(0);
+  }
+  
+  .message {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  .message.success {
+    background: rgba(0, 197, 164, 0.2);
+    color: #00c5a4;
+    border: 1px solid rgba(0, 197, 164, 0.3);
+  }
+  
+  .message.error {
+    background: rgba(255, 62, 108, 0.2);
+    color: #ff3e6c;
+    border: 1px solid rgba(255, 62, 108, 0.3);
+  }
+  
+  /* Анимации */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 16px;
+  }
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .create-note {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    
+    .create-note h3 {
+      font-size: 1.5rem;
+    }
+    
+    .create-note form {
+      gap: 1.2rem;
+    }
+  }
+  
+  /* Стили для файлового инпута */
+  .file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .file-input-button {
+    display: inline-block;
+    padding: 0.8rem 1rem;
+    background: rgba(41, 98, 255, 0.1);
+    color: #2962ff;
+    border: 1px dashed #2962ff;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .file-input-button:hover {
+    background: rgba(41, 98, 255, 0.2);
+  }
+  
+  .file-input-container input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }

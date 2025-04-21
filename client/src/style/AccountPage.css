@@ -1,0 +1,156 @@
+.account-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #080710;
+    min-height: 100vh;
+  }
+  
+  .account-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .account-container h1 {
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+  }
+  
+  .form-group input:disabled {
+    background-color: #f9f9f9;
+    color: #666;
+  }
+  
+  .form-group input:focus {
+    border-color: #1890ff;
+    outline: none;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .edit-btn, .save-btn, .cancel-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+  }
+  
+  .edit-btn {
+    background-color: #1890ff;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #40a9ff;
+  }
+  
+  .save-btn {
+    background-color: #52c41a;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #73d13d;
+  }
+  
+  .cancel-btn {
+    background-color: #f5f5f5;
+    color: #666;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .error-message {
+    color: #ff4d4f;
+    padding: 10px;
+    background-color: #fff1f0;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .success-message {
+    color: #52c41a;
+    padding: 10px;
+    background-color: #f6ffed;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  .visibility-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 15px 0;
+  }
+  
+  .visibility-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .visibility-btn:hover {
+    background: #e0e0e0;
+  }
+  
+  .visibility-btn.active {
+    background: #1890ff;
+    color: white;
+  }
+  
+  .visibility-btn svg {
+    font-size: 18px;
+  }
